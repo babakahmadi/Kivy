@@ -1,0 +1,66 @@
+#:set textCalc ''
+
+<Button1@Button>:
+	font_size: 30
+	on_press:  self.parent.parent.calc(self.text)
+
+<Calculator>:
+	orientation: 'vertical'
+	Label:
+		id: my_text
+		halign: 'left'
+		#color: [1,0,0,0]
+		background_color: [1,0,0,0]
+		font_size: 40 
+		size_hint_y: 0.3
+		#height: 0.1
+		text: '0'
+	GridLayout:
+		cols: 5
+		rows: 4
+		Button1:
+			text: '1'
+			#on_press: print my_text.text
+		Button1:
+			text: '2'
+		Button1:
+			text: '3'
+		Button1:
+			text: '+'
+		Button1:
+			text: 'sin'
+
+		Button1:
+			text: '4'
+		Button1:
+			text: '5'
+		Button1:
+			text: '6'
+		Button1:
+			text: '-'
+		Button1:
+			text: 'cos'
+
+		Button1:
+			text: '7'
+		Button1:
+			text: '8'
+		Button1:
+			text: '9'
+		Button1:
+			text: '*'
+		Button1:
+			text: 'tan'
+
+		Button1:
+			text: '.'
+		Button1:
+			text: '0'
+		Button1:
+			text: '='
+		Button1:
+			text: '/'
+		Button1:
+			text: 'C'
+
+		
